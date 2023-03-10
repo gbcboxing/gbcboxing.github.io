@@ -8,7 +8,7 @@ for file in os.listdir("working"):
     lines = in_text.splitlines()
     for i in range(len(lines)):
       words = lines[i].split()
-      if words[0].startswith("$"):
+      if len(words) > 0 and words[0].startswith("$"):
         replace = ""
         for j in range(1, len(words)):
           replace += words[j] + " "

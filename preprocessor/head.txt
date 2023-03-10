@@ -17,12 +17,12 @@
 <section class="navigation">
   <div class="nav-container">
     <div class="brand"><a href="index.html">GBC</a></div>
-    <div class="darktheme-switch-container"><button class="darktheme" title="Toggle Dark Theme" aria-hidden="true"></button></div>
+    <div class="darktheme-switch-container"><button class="darktheme" aria-hidden="true"></button></div>
     <nav>
       <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
       <ul class="nav-list">
         <li><a href="index.html">Home</a></li>
-        <li><a href="#!">News</a></li>
+        <li><a href="news.html">News</a></li>
         <li><a href="#!">Belts</a>
           <ul class="nav-dropdown">
             <li><a href="#!">Heavyweight</a></li>
