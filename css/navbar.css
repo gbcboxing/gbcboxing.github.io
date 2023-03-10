@@ -2,7 +2,12 @@
 
 .navigation {
   height: 70px;
-  background: #262626;
+  background: var(--menulight);
+  font-weight: bold;
+}
+
+body.darktheme .navigation {
+  background: var(--menudark);
 }
   
 .brand {
@@ -15,8 +20,13 @@
 
 .brand a,
 .brand a:visited {
-  color: #ffffff;
+  color: var(--textlight);
   text-decoration: none;
+}
+
+body.darktheme .brand a,
+body.darktheme .brand a:visited {
+  color: var(--textdark);
 }
 
 .nav-container {
@@ -44,15 +54,27 @@ nav ul li a:visited {
   display: block;
   padding: 0 20px;
   line-height: 70px;
-  background: #262626;
-  color: #ffffff;
+  background: var(--menulight);
+  color: var(--textlight);
   text-decoration: none;
+}
+
+body.darktheme nav ul li a,
+body.darktheme nav ul li a:visited {
+  background: var(--menudark);
+  color: var(--textdark);
 }
 
 nav ul li a:hover,
 nav ul li a:visited:hover {
-  background: #2581DC;
-  color: #ffffff;
+  background: var(--menuhoverlight);
+  color: var(--textlight);
+}
+
+body.darktheme nav ul li a:hover,
+body.darktheme nav ul li a:visited:hover {
+  background: var(--menuhoverdark);
+  color: var(--textdark);
 }
 
 nav ul li a:not(:only-child):after,
@@ -83,9 +105,13 @@ nav ul li ul li a {
   position: absolute;
   top: 0;
   right: 0;
-  background: #262626;
+  background: var(--menulight);
   height: 70px;
   width: 70px;
+}
+
+body.darktheme .nav-mobile {
+  background: var(--menudark);
 }
   
 @media only screen and (max-width: 798px) {
@@ -141,11 +167,17 @@ nav ul li ul li a {
   border-radius: 1px;
   height: 5px;
   width: 35px;
-  background: #ffffff;
+  background: var(--textlight);
   position: absolute;
   display: block;
   content: "";
   transition: all 300ms ease-in-out;
+}
+
+body.darktheme #nav-toggle span,
+body.darktheme #nav-toggle span:before,
+body.darktheme #nav-toggle span:after {
+  background: var(--textdark);
 }
 
 #nav-toggle span:before {

@@ -1,0 +1,16 @@
+:root {
+  --backgroundlight: #dddddd;
+  --backgrounddark: #404258;
+
+  --cardlight: #ffffff;
+  --carddark: #474E68;
+
+  --textlight: black;
+  --textdark: lightgray;
+
+  --menulight: darkgray;
+  --menudark: #2C3333;
+
+  --menuhoverlight: #777777;
+  --menuhoverdark: #3c3757;
+}

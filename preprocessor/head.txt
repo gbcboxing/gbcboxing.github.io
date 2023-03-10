@@ -3,6 +3,7 @@
 <head>
   <title>GBC BOXING</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/variables.css">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/navbar.css">
   <link rel="stylesheet" href="css/darktheme-switch.css">
@@ -20,22 +21,42 @@
     <nav>
       <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
       <ul class="nav-list">
-        <li><a href="#!">Home</a></li>
-        <li><a href="#!">About</a></li>
-        <li><a href="#!">Services</a>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#!">News</a></li>
+        <li><a href="#!">Belts</a>
           <ul class="nav-dropdown">
-            <li><a href="#!">Web Design</a></li>
-            <li><a href="#!">Web Development</a></li>
-            <li><a href="#!">Graphic Design</a></li>
+            <li><a href="#!">Heavyweight</a></li>
+            <li><a href="#!">Cruiserweight</a></li>
+            <li><a href="#!">Lightweight</a></li>
+            <li><a href="#!">Flyweight</a></li>
           </ul>
         </li>
-        <li><a href="#!">Pricing</a></li>
-        <li>
-          <a href="#!">Portfolio</a>
+        <li><a href="#!">Competitors</a>
           <ul class="nav-dropdown">
-            <li><a href="#!">Web Design</a></li>
-            <li><a href="#!">Web Development</a></li>
-            <li><a href="#!">Graphic Design</a></li>
+            <li><a href="#!">A-Dizzle</a></li>
+            <li><a href="bagstock.html">Bagstock</a></li>
+            <li><a href="#!">Candlewick</a></li>
+            <li><a href="#!">Cousin Clarence</a></li>
+            <li><a href="#!">Jabadobbins</a></li>
+            <li><a href="#!">Quintin Steel</a></li>
+            <li><a href="#!">Rock Kickass</a></li>
+            <li><a href="#!">The Reaper</a></li>
+            <li><a href="#!">Vinnie Mazzetti</a></li>
+          </ul>
+        </li>
+        <li><a href="#!">Buff Lads</a>
+          <ul class="nav-dropdown">
+            <li><a href="#!">Buff Lads 2023</a></li>
+            <li><a href="#!">Buff Lads 2022</a></li>
+            <li><a href="#!">Buff Lads 2019</a></li>
+          </ul>
+        </li>
+        <li><a href="#!">Fights</a>
+          <ul class="nav-dropdown">
+            <li><a href="#!">The Beard and the Bull</a></li>
+            <li><a href="#!">Weekend at Vinnie's</a></li>
+            <li><a href="#!">The Riser of the Dead</a></li>
+            <li><a href="#!">Wick Stock and 2 Smokin' Barrels</a></li>
           </ul>
         </li>
       </ul>

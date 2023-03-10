@@ -7,25 +7,33 @@
   width: 30px;
   height:1.5rem;
   border-radius:500px;
-  border:2px solid #888;
+  border:2px solid var(--textlight);
   background-color:transparent;
   cursor:pointer;
   appearance:none;
 }
 
-.darktheme-switch-container button.darktheme::before{
+body.darktheme .darktheme-switch-container button.darktheme {
+  border:2px solid var(--textdark);
+}
+
+.darktheme-switch-container button.darktheme::before {
   content:'';
   position:absolute;
   left:4px;
   top:50%;
   width:1rem;
   height:1rem;
-  background-color:#888;
+  background-color:var(--textlight);
   border-radius:50%;
   transform:translateY(-50%);
 }
 
-.darktheme-switch-container button.darktheme.active::before{
+body.darktheme .darktheme-switch-container button.darktheme::before {
+  background-color:var(--textdark);
+}
+
+.darktheme-switch-container button.darktheme.active::before {
   left:auto;
   right:4px;
 }
