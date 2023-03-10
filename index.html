@@ -1,11 +1,47 @@
+<!DOCTYPE html>
 <html>
 <head>
   <title>GBC BOXING</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="navbar.css">
+  <link rel="stylesheet" href="darktheme-switch.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="navbar.js"></script>
+  <script src="darktheme.js" defer></script>
+  <script src="project.js" defer></script>
 </head>
 <body>
+
+<section class="navigation">
+  <div class="nav-container">
+    <div class="brand"><a href="index.html">GBC</a></div>
+    <div class="darktheme-switch-container"><button class="darktheme" title="Toggle Dark Theme" aria-hidden="true"></button></div>
+    <nav>
+      <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+      <ul class="nav-list">
+        <li><a href="#!">Home</a></li>
+        <li><a href="#!">About</a></li>
+        <li><a href="#!">Services</a>
+          <ul class="nav-dropdown">
+            <li><a href="#!">Web Design</a></li>
+            <li><a href="#!">Web Development</a></li>
+            <li><a href="#!">Graphic Design</a></li>
+          </ul>
+        </li>
+        <li><a href="#!">Pricing</a></li>
+        <li>
+          <a href="#!">Portfolio</a>
+          <ul class="nav-dropdown">
+            <li><a href="#!">Web Design</a></li>
+            <li><a href="#!">Web Development</a></li>
+            <li><a href="#!">Graphic Design</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</section>
 
 <div class="card title">
   <h1>GBC Boxing </h1>
