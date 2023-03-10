@@ -188,10 +188,11 @@ body.darktheme #nav-toggle span:after {
   bottom: -10px;
 }
 
-#nav-toggle.active span {
+#nav-toggle.active span,
+body.darktheme #nav-toggle.active span {
   background-color: transparent;
 }
-
+	
 #nav-toggle.active span:before, #nav-toggle.active span:after {
   top: 0;
 }
