@@ -8,10 +8,5 @@
 <body>
 
 <div class="card title">
-  <h1>GBC Boxing </h1>
+  <h1>$</h1>
 </div>
-<div class="card">
-  <h2>Welcome to the Official Website of the GBC and the Buff Lads family of events</h2>
-</div>
-</body>
-</html>
