@@ -22,7 +22,7 @@ for file in os.listdir("working"):
         linkword = linkname
         linkword = linkword.replace(".html", "")
         linkword = linkword.replace("_", " ")
-        linkword = linkword.capitalize()
+        linkword = linkword.title()
         linktext = "<a href=\"" + linkname + "\">" + linkword + "</a>"
         in_text = ireplace(linkword, linktext, in_text)
 
