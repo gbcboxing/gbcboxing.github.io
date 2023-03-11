@@ -8,6 +8,10 @@ body.darktheme {
   background-color: var(--backgrounddark);
 }
 
+.container {
+  min-height: 100%;
+}
+
 .title {
   text-align: center;
 }
@@ -15,11 +19,53 @@ body.darktheme {
 .card {
   background-color: var(--cardlight);
   color: var(--textlight);
-  padding: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin: 10px;
+  margin-top: 20px;
 }
 
 body.darktheme .card {
   background-color: var(--carddark);
   color: var(--textdark);
+}
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: var(--cardlight);
+  color: var(--textlight);
+  margin-top: 20px;
+}
+
+body.darktheme .footer {
+  background: var(--carddark);
+  color: var(--textdark);
+}
+
+.button {
+  background-color: var(--menulight);
+  border: none;
+  color: var(--textlight);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: var(--menuhoverlight);
+}
+
+body.darktheme .button {
+  background-color: var(--menudark);
+  color: var(--textdark);
+}
+
+body.darktheme .button:hover {
+  background-color: var(--menuhoverdark);
 }
