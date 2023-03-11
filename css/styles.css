@@ -71,10 +71,12 @@ body.darktheme .button:hover {
 }
 
 .halfwidth {
-  width: 49.5%;
+  width: 45%;
 }
 
 .profile-circle {
-  width: 100%;
+  width: 80%;
+  position: relative;
+  left: 10%;
   border-radius: 50%;
 }
