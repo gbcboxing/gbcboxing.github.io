@@ -92,3 +92,61 @@ body.darktheme .button:hover {
     height: 50px;
   }
 }
+
+.infobox {
+  float: right;
+  margin-left: 20px;
+  max-width: 400px;
+  background: var(--infoboxlight);
+}
+
+body.darktheme .infobox {
+  background: var(--infoboxdark);
+}
+
+@media only screen and (max-width: 798px) {
+  .infobox {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    float: none;
+  }
+}
+
+.infobox-inner {
+  background: var(--cardlight);
+  color: var(--textlight);
+  margin: 10px;
+  padding: 10px;
+}
+
+body.darktheme .infobox-inner {
+  background: var(--carddark);
+  color: var(--textdark);
+}
+
+.infobox-img {
+  width: 100%;
+}
+
+@media only screen and (max-width: 798px) {
+  .infobox-img {
+    max-height: 400px;
+    width: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.infobox-table {
+  width: 100%;
+}
+
+th, td {
+  border: 1px solid;
+  padding: 5px;
+  text-align: center;
+}

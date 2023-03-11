@@ -41,7 +41,7 @@
           <ul class="nav-dropdown">
             <li><a href="#!">A-Dizzle</a></li>
             <li><a href="bagstock.html">Bagstock</a></li>
-            <li><a href="#!">Candlewick</a></li>
+            <li><a href="candlewick.html">Candlewick</a></li>
             <li><a href="#!">Cousin Clarence</a></li>
             <li><a href="#!">Jabadobbins</a></li>
             <li><a href="#!">Quintin Steel</a></li>
