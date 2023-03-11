@@ -1,10 +1,32 @@
 import os
+
+def ireplace(old, new, text):
+    idx = 0
+    while idx < len(text):
+        index_l = text.lower().find(old.lower(), idx)
+        if index_l == -1:
+            return text
+        text = text[:index_l] + new + text[index_l + len(old):]
+        idx = index_l + len(new) 
+    return text
+
 for file in os.listdir("working"):
   if file.endswith(".html"):
     in_file = open("working/" + file, "r")
     in_text = in_file.read()
     in_file.close()
+    
+    ## add links
+    for linkname in os.listdir("working"):
+      if linkname.endswith(".html") and linkname != file:
+        linkword = linkname
+        linkword = linkword.replace(".html", "")
+        linkword = linkword.replace("_", " ")
+        linkword = linkword.capitalize()
+        linktext = "<a href=\"" + linkname + "\">" + linkword + "</a>"
+        in_text = ireplace(linkword, linktext, in_text)
 
+    # add macro text
     lines = in_text.splitlines()
     for i in range(len(lines)):
       words = lines[i].split()
