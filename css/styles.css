@@ -69,3 +69,12 @@ body.darktheme .button {
 body.darktheme .button:hover {
   background-color: var(--menuhoverdark);
 }
+
+.halfwidth {
+  width: 49.5%;
+}
+
+.profile-circle {
+  width: 100%;
+  border-radius: 50%;
+}
