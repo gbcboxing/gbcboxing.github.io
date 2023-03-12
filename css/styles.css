@@ -83,6 +83,13 @@ body.darktheme .button:hover {
   margin-right: auto;
 }
 
+.profile {
+  width: 100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .footer-image {
   height: 115px;
 }
@@ -164,4 +171,14 @@ body.darktheme a {
   max-width: 10%;
   min-width: 220px;
   padding-right: 20px;
+}
+
+.rankings-table {
+  width: calc(100% - 420px);
+}
+
+@media only screen and (max-width: 798px) {
+  .rankings-table {
+    width: 100%;
+  }
 }
