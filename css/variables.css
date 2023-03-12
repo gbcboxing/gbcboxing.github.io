@@ -1,9 +1,9 @@
 :root {
   --backgroundlight: #dddddd;
-  --backgrounddark: #404258;
+  --backgrounddark: #0d1117;
 
   --cardlight: #ffffff;
-  --carddark: #474E68;
+  --carddark: #161b22;
 
   --infoboxlight: lightgray;
   --infoboxdark: #323952;
@@ -15,5 +15,8 @@
   --menudark: #212121;
 
   --menuhoverlight: #777777;
-  --menuhoverdark: #3c3757;
+  --menuhoverdark: #141414;
+
+  --linklight: #406bbb;
+  --linkdark: #47a6ff;
 }

@@ -150,3 +150,11 @@ th, td {
   padding: 5px;
   text-align: center;
 }
+
+a {
+  color: var(--linklight);
+}
+
+body.darktheme a {
+  color: var(--linkdark);
+}
