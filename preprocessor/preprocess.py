@@ -13,7 +13,7 @@ def ireplace(old, new, text):
 for file in os.listdir("working"):
   if file.endswith(".html"):
     in_file = open("working/" + file, "r")
-    in_text = in_file.read()
+    text = in_file.read()
     in_file.close()
     
     ## add links
@@ -24,10 +24,10 @@ for file in os.listdir("working"):
         linkword = linkword.replace("_", " ")
         linkword = linkword.title()
         linktext = "<a href=\"" + linkname + "\">" + linkword + "</a>"
-        in_text = ireplace(linkword, linktext, in_text)
+        text = ireplace(linkword, linktext, text)
 
     # add macro text
-    lines = in_text.splitlines()
+    lines = text.splitlines()
     for i in range(len(lines)):
       words = lines[i].split()
       if len(words) > 0 and words[0].startswith("$"):
@@ -40,10 +40,25 @@ for file in os.listdir("working"):
         replace_text = replace_text.replace("$", replace)
         lines[i] = replace_text
 
-    out_text = ""
+    text = ""
     for line in lines:
-      out_text += line + "\n"
+      text += line + "\n"
+
+    # add twitter links
+    i = 0
+    while i < len(text):
+      if text[i] == "@":
+        i += 1
+        j = i
+        while text[j].isalnum() or text[j] == "_":
+          j += 1
+        twitter_handle = text[i:j]
+        twitter_handle_with_at = text[(i - 1):j]
+        twitter_link = "<a href=\"https://twitter.com/" + twitter_handle + "\">" + twitter_handle_with_at + "</a>"
+        text = text.replace(twitter_handle_with_at, twitter_link)
+        i += len(twitter_link) * 2
+      i += 1
 
     out_file = open(file, "w")
-    out_file.write(out_text)
+    out_file.write(text)
     out_file.close()

@@ -2,7 +2,7 @@
   <img style="float:left;" class="footer-image" src="assets/images/fiji flag.jpeg">
   <img style="float:right;" class="footer-image" src="assets/images/wales flag.png">
   <h2>© GBC Boxing 2019-2023</h2>
-  <h6>Please tweet comments or corrections <a href="https://twitter.com/BRICK_BUFFPUNCH">@BRICK_BUFFPUNCH</a></h6>
+  <h6>Please tweet comments or corrections @BRICK_BUFFPUNCH</h6>
 </div>
 
 </div>
