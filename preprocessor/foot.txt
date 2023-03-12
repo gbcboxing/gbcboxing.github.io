@@ -1,6 +1,6 @@
 <div class="footer">
-  <img style="float:left;" class="footer-image" src="assets/images/fiji flag.jpeg">
-  <img style="float:right;" class="footer-image" src="assets/images/wales flag.png">
+  <img style="float:left;" class="footer-image" src="assets/images/fijiflag.jpeg">
+  <img style="float:right;" class="footer-image" src="assets/images/walesflag.png">
   <h2>© GBC Boxing 2019-2023</h2>
   <h6>Please tweet comments or corrections @BRICK_BUFFPUNCH</h6>
 </div>

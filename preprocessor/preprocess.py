@@ -1,14 +1,14 @@
 import os
 
 def ireplace(old, new, text):
-    idx = 0
-    while idx < len(text):
-        index_l = text.lower().find(old.lower(), idx)
-        if index_l == -1:
-            return text
-        text = text[:index_l] + new + text[index_l + len(old):]
-        idx = index_l + len(new) 
-    return text
+  idx = 0
+  while idx < len(text):
+    index_l = text.lower().find(old.lower(), idx)
+    if index_l == -1:
+      return text
+    text = text[:index_l] + new + text[index_l + len(old):]
+    idx = index_l + len(new) 
+  return text
 
 for file in os.listdir("working"):
   if file.endswith(".html"):
