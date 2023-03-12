@@ -46,18 +46,19 @@ for file in os.listdir("working"):
 
     # add twitter links
     i = 0
+    twitter_link_dict = { }
     while i < len(text):
       if text[i] == "@":
-        i += 1
-        j = i
+        j = i + 1
         while text[j].isalnum() or text[j] == "_":
           j += 1
         twitter_handle = text[i:j]
-        twitter_handle_with_at = text[(i - 1):j]
-        twitter_link = "<a href=\"https://twitter.com/" + twitter_handle + "\">" + twitter_handle_with_at + "</a>"
-        text = text.replace(twitter_handle_with_at, twitter_link)
-        i += len(twitter_link) * 2
+        twitter_link = "<a href=\"https://twitter.com/" + twitter_handle[1:] + "\">" + twitter_handle + "</a>"
+        twitter_link_dict[twitter_handle] = twitter_link
       i += 1
+
+    for key in twitter_link_dict:
+      text = text.replace(key, twitter_link_dict[key])
 
     out_file = open(file, "w")
     out_file.write(text)
