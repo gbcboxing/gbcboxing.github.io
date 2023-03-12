@@ -158,3 +158,10 @@ a {
 body.darktheme a {
   color: var(--linkdark);
 }
+
+.img-side {
+  float: left;
+  max-width: 10%;
+  min-width: 220px;
+  padding-right: 20px;
+}
