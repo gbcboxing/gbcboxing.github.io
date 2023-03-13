@@ -175,6 +175,7 @@ body.darktheme a {
 
 .rankings-table {
   width: calc(100% - 420px);
+  padding-bottom: 30px;
 }
 
 @media only screen and (max-width: 798px) {
