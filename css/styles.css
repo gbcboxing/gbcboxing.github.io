@@ -199,3 +199,78 @@ body.darktheme a {
 body.darktheme .bufflads-stats th {
   background-color: var(--infoboxdark);
 }
+
+.win {
+  background-color: var(--win);
+  color: var(--textlight);
+}
+
+.draw {
+  background-color: var(--draw);
+  color: var(--textlight);
+}
+
+.loss {
+  background-color: var(--loss);
+  color: var(--textlight);
+}
+
+.flyyweight {
+  background-color: var(--flyyweight);
+  color: var(--textlight);
+  border-color: var(--textlight);
+}
+
+body.darktheme .flyyweight {
+  border-color: var(--textdark);
+}
+
+.flyyweight a,
+body.darktheme .flyyweight a {
+  color: var(--textlight);
+}
+
+.lighttweight {
+  background-color: var(--lighttweight);
+  color: var(--textdark);
+  border-color: var(--textlight);
+}
+
+body.darktheme .lighttweight {
+  border-color: var(--textdark);
+}
+
+.lighttweight a,
+body.darktheme .lighttweight a {
+  color: var(--textdark);
+}
+
+.cruiserrweight {
+  background-color: var(--cruiserrweight);
+  color: var(--textdark);
+  border-color: var(--textlight);
+}
+
+body.darktheme .cruiserrweight {
+  border-color: var(--textdark);
+}
+
+.cruiserrweight a,
+body.darktheme .cruiserrweight a {
+  color: var(--textdark);
+}
+
+.heavyyweight {
+  background-color: var(--heavyyweight);
+  color: var(--textdark);
+  border-color: var(--textlight);
+}
+
+body.darktheme .heavyyweight {
+  border-color: var(--textdark);
+}
+
+.heavyyweight a,
+body.darktheme .heavyyweight a {
+  color: var(--textdark);
+}
