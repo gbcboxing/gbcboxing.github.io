@@ -191,3 +191,11 @@ body.darktheme a {
   width: 100%;
   padding-bottom: 30px;
 }
+
+.bufflads-stats th {
+  background-color: var(--infoboxlight);
+}
+
+body.darktheme .bufflads-stats th {
+  background-color: var(--infoboxdark);
+}
