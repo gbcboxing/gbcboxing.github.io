@@ -97,6 +97,9 @@ nav ul li ul li a {
   display: none;
   z-index: 1;
   box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+  left: auto;
+  right:0;
+  margin-right:-10px;
 }
   
 /* Mobile navigation */
@@ -114,7 +117,7 @@ body.darktheme .nav-mobile {
   background: var(--menudark);
 }
   
-@media only screen and (max-width: 798px) {
+@media only screen and (max-width: 910px) {
   .nav-mobile {
     display: block;
   }
@@ -146,7 +149,7 @@ body.darktheme .nav-mobile {
   }
 }
 
-@media screen and (min-width: 799px) {
+@media screen and (min-width: 911px) {
   .nav-list {
     display: block !important;
   }
