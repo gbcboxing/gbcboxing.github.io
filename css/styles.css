@@ -294,16 +294,13 @@ body.darktheme .heavyyweight a {
   margin-right: auto;
 }
 
-.glow-small {
-  -webkit-filter: drop-shadow(2px 2px 2px white)
-                  drop-shadow(-2px -2px 2px white);
-  filter: drop-shadow(2px 2px 2px white) 
-          drop-shadow(-2px -2px 2px white);
-}
-
 .glow {
-  -webkit-filter: drop-shadow(4px 4px 4px white)
-                  drop-shadow(-4px -4px 4px white);
-  filter: drop-shadow(4px 4px 4px white) 
-          drop-shadow(-4px -4px 4px white);
+  -webkit-filter: drop-shadow(2px 2px 2px white)
+  drop-shadow(2px -2px 2px white)
+  drop-shadow(-2px 2px 2px white)
+  drop-shadow(-2px -2px 2px white);
+  filter: drop-shadow(2px 2px 2px white)
+  drop-shadow(2px -2px 2px white)
+  drop-shadow(-2px 2px 2px white)
+  drop-shadow(-2px -2px 2px white);
 }
