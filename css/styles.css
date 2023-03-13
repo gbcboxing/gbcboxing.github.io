@@ -138,7 +138,11 @@ body.darktheme .infobox-inner {
 }
 
 .infobox-img {
-  width: 100%;
+  max-width: 100%;
+  max-height: 500px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media only screen and (max-width: 798px) {
@@ -287,20 +291,31 @@ body.darktheme .heavyyweight a {
   color: var(--textdark);
 }
 
-.video {
-  padding: 20px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+.glow {
+  -webkit-filter: drop-shadow(2px 2px 2px lightgrey)
+  drop-shadow(2px -2px 2px lightgrey)
+  drop-shadow(-2px 2px 2px lightgrey)
+  drop-shadow(-2px -2px 2px lightgrey);
+  filter: drop-shadow(2px 2px 2px lightgrey)
+  drop-shadow(2px -2px 2px lightgrey)
+  drop-shadow(-2px 2px 2px lightgrey)
+  drop-shadow(-2px -2px 2px lightgrey);
 }
 
-.glow {
-  -webkit-filter: drop-shadow(2px 2px 2px white)
-  drop-shadow(2px -2px 2px white)
-  drop-shadow(-2px 2px 2px white)
-  drop-shadow(-2px -2px 2px white);
-  filter: drop-shadow(2px 2px 2px white)
-  drop-shadow(2px -2px 2px white)
-  drop-shadow(-2px 2px 2px white)
-  drop-shadow(-2px -2px 2px white);
+.video-container {
+  max-width: 560px;
+  float: left;
+}
+
+@media only screen and (max-width: 798px) {
+  .video-container {
+    width: 100%;
+    float: none;
+  }
+}
+
+.video {
+  aspect-ratio: 16 / 9;
+  margin: 10px;
+  width: calc(100% - 20px);
 }
