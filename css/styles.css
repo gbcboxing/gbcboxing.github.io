@@ -310,6 +310,7 @@ body.darktheme .heavyyweight a {
 @media only screen and (max-width: 798px) {
   .video-container {
     width: 100%;
+    max-width: 100%;
     float: none;
   }
 }
