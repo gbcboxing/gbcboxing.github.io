@@ -9,7 +9,7 @@ body.darktheme {
 }
 
 .container {
-  min-height: 100%;
+  width: 100%;
 }
 
 .title {
@@ -25,6 +25,9 @@ body.darktheme {
   padding-right: 20px;
   margin: 10px;
   margin-top: 20px;
+  height: auto;
+  display: table;
+  width: calc(100% - 60px);
 }
 
 body.darktheme .card {
@@ -173,13 +176,18 @@ body.darktheme a {
   padding-right: 20px;
 }
 
-.rankings-table {
+.table-left-of-infobox {
   width: calc(100% - 420px);
   padding-bottom: 30px;
 }
 
 @media only screen and (max-width: 798px) {
-  .rankings-table {
+  .table-left-of-infobox {
     width: 100%;
   }
+}
+
+.table-fullwidth {
+  width: 100%;
+  padding-bottom: 30px;
 }
