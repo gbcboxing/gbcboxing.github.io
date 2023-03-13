@@ -205,14 +205,26 @@ body.darktheme .bufflads-stats th {
   color: var(--textlight);
 }
 
+body.darktheme .win {
+  border-color: var(--textdark);
+}
+
 .draw {
   background-color: var(--draw);
   color: var(--textlight);
 }
 
+body.darktheme .draw {
+  border-color: var(--textdark);
+}
+
 .loss {
   background-color: var(--loss);
   color: var(--textlight);
+}
+
+body.darktheme .loss {
+  border-color: var(--textdark);
 }
 
 .flyyweight {
