@@ -365,6 +365,9 @@ table.responsive-table caption {
   font-weight: bold;
 }
 
+div.profile-background a {
+  top: 115px;
+}
 
 @media screen and (max-width: 600px) {
   
