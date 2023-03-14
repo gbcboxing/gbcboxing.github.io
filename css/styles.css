@@ -350,6 +350,22 @@ table.responsive-table caption {
   margin: .5em 0 .75em;
 }
 
+.profile-background {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 140px;
+}
+
+.profile-background a {
+  color: black !important;
+  text-shadow: 0 0 3px white, 0 0 8px white;
+  position: relative;
+  top: 60px;
+  font-weight: bold;
+}
+
+
 @media screen and (max-width: 600px) {
   
   table.responsive-table thead {
@@ -377,19 +393,9 @@ table.responsive-table caption {
     float: left;
     font-weight: bold;
   }
+
+  table.responsive-table .profile-background a {
+    top: 120px;
+  }
   
-}
-
-.profile-background {
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  height: 140px;
-}
-
-.profile-background a {
-  color: black;
-  text-shadow: 0 0 3px white, 0 0 8px white;
-  position: relative;
-  top: 60px;
 }
