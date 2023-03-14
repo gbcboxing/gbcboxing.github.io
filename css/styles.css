@@ -379,3 +379,17 @@ table.responsive-table caption {
   }
   
 }
+
+.profile-background {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 140px;
+}
+
+.profile-background a {
+  color: black;
+  text-shadow: 0 0 3px white, 0 0 8px white;
+  position: relative;
+  top: 60px;
+}
