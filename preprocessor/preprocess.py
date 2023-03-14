@@ -6,7 +6,8 @@ def ireplace(old, new, text):
     index_l = text.lower().find(old.lower(), idx)
     if index_l == -1:
       return text
-    text = text[:index_l] + new + text[index_l + len(old):]
+    if text[index_l - 1] != "\"" and text[index_l - 1] != "/":
+      text = text[:index_l] + new + text[index_l + len(old):]
     idx = index_l + len(new) 
   return text
 

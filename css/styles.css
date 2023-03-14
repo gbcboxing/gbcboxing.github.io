@@ -291,6 +291,21 @@ body.darktheme .heavyyweight a {
   color: var(--textdark);
 }
 
+.bronze {
+  background-color: var(--bronze);
+  color: var(--textlight);
+}
+
+.silver {
+  background-color: var(--silver);
+  color: var(--textlight);
+}
+
+.gold {
+  background-color: var(--gold);
+  color: var(--textlight);
+}
+
 .glow {
   -webkit-filter: drop-shadow(2px 2px 2px lightgrey)
   drop-shadow(2px -2px 2px lightgrey)
@@ -319,4 +334,48 @@ body.darktheme .heavyyweight a {
   aspect-ratio: 16 / 9;
   margin: 10px;
   width: calc(100% - 20px);
+}
+
+
+/* Responsive table */
+table.responsive-table {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  table-layout: fixed;
+}
+
+table.responsive-table caption {
+  font-weight: bold;
+  margin: .5em 0 .75em;
+}
+
+@media screen and (max-width: 600px) {
+  
+  table.responsive-table thead {
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+  
+  table.responsive-table tr {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  table.responsive-table td {
+    display: block;
+    margin-bottom: 1px;
+  }
+  
+  table.responsive-table td::before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+  }
+  
 }
