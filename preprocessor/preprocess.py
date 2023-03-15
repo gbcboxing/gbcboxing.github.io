@@ -6,7 +6,7 @@ def ireplace(old, new, text):
     index_l = text.lower().find(old.lower(), idx)
     if index_l == -1:
       return text
-    if text[index_l - 1] != "\"" and text[index_l - 1] != "/":
+    if text[index_l - 1] != "\"" and text[index_l - 1] != "/" and text[index_l - 1] != "@" and not text[index_l - 1].isalnum():
       text = text[:index_l] + new + text[index_l + len(old):]
     idx = index_l + len(new) 
   return text
