@@ -370,13 +370,12 @@ div.profile-background a {
 }
 
 .profile-background.tall {
-  height: 400px;
+  height: 260px;
 }
 
 .profile-background.tall a {
-  top: 180px;
+  top: 120px;
 }
-
 
 @media screen and (max-width: 1000px) {
   
