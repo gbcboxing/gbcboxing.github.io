@@ -369,6 +369,15 @@ div.profile-background a {
   top: 115px;
 }
 
+.profile-background.tall {
+  height: 400px;
+}
+
+.profile-background.tall a {
+  top: 180px;
+}
+
+
 @media screen and (max-width: 1000px) {
   
   table.responsive-table thead {
