@@ -460,7 +460,27 @@ body.darktheme table.table-striped tr:nth-child(4n - 1) {
   }
 }
 
-.table-fullwidth.scorecards .colored,
-.table-fullwidth.scorecards .colored a {
+.scorecard .colored,
+.scorecard .colored a {
   color: var(--textlight);
+}
+
+.scorecard {
+  float: left;
+  width: 33.3333%;
+}
+
+.scorecards {
+  width: 100%;
+}
+
+.final-score {
+  width: 100%;
+}
+
+@media only screen and (max-width: 798px) {
+  .scorecard {
+    float: none;
+    width: 100%;
+  }
 }
