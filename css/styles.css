@@ -175,9 +175,18 @@ body.darktheme a {
 
 .img-side {
   float: left;
-  max-width: 10%;
-  min-width: 220px;
+  max-width: 20%;
+  min-width: 420px;
   padding-right: 20px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .img-side {
+    float: left;
+    max-width: 10%;
+    min-width: 220px;
+    padding-right: 20px;
+  }
 }
 
 .img-side img {
@@ -328,13 +337,20 @@ body.darktheme .heavyyweight a {
 }
 
 .video-container {
-  max-width: 560px;
+  width: 500px;
   float: left;
 }
 
 .video-container.feature {
   width: calc(100% - 420px);
   max-width: calc(100% - 420px);
+}
+
+@media only screen and (max-width: 1200px) {
+  .video-container {
+    max-width: 320px;
+    width: 320px;
+  }
 }
 
 @media only screen and (max-width: 798px) {
