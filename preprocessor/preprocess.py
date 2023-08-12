@@ -24,6 +24,11 @@ for file in os.listdir("working"):
         linkword = linkword.replace(".html", "")
         linkword = linkword.replace("_", " ")
         linkword = linkword.title()
+        for i in range(1, len(linkword)):
+          if linkword[i].isupper() and linkword[i - 1] != " ":
+            l = list(linkword)
+            l[i] = linkword[i].lower()
+            linkword = "".join(l)
         linktext = "<a href=\"" + linkname + "\">" + linkword + "</a>"
         text = ireplace(linkword, linktext, text)
 
@@ -35,10 +40,11 @@ for file in os.listdir("working"):
         replace = ""
         for j in range(1, len(words)):
           replace += words[j] + " "
+        replace = ">" + replace.strip() + "<"
         replace_file = open("preprocessor/" + words[0][1:] + ".txt", "r")
         replace_text = replace_file.read()
         replace_file.close()
-        replace_text = replace_text.replace("$", replace)
+        replace_text = replace_text.replace(">$<", replace)
         lines[i] = replace_text
 
     text = ""
